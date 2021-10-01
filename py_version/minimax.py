@@ -22,7 +22,7 @@ board = [
     [0, 0, 0],
 ]
 
-
+#evaluation state wwhich organises the code
 def evaluate(state):
     """
     Function to heuristic evaluation of state.
@@ -38,7 +38,7 @@ def evaluate(state):
 
     return score
 
-
+#code which makes wins
 def wins(state, player):
     """
     This function tests if a specific player wins. Possibilities:
@@ -64,7 +64,7 @@ def wins(state, player):
     else:
         return False
 
-
+#code which sets owner loose the game
 def game_over(state):
     """
     This function test if the human or computer wins
@@ -249,7 +249,7 @@ def human_turn(c_choice, h_choice):
         except (KeyError, ValueError):
             print('Bad choice')
 
-
+#main code at the end main value
 def main():
     """
     Main function that calls all functions
@@ -314,6 +314,6 @@ def main():
 
     exit()
 
-
+#finally
 if __name__ == '__main__':
     main()
